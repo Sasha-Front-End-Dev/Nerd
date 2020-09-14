@@ -1,3 +1,9 @@
+@media (max-width: 2560px) {
+    .promo {
+        background-position: 65% bottom;
+    }
+}
+
 @media (max-width: 1024px) {
     .promo {
         background-position: 100% bottom;
