@@ -16,7 +16,7 @@ body {
 
 .promo {
     background-color: #eeeeee;
-    background-image: url(/images/promo-bg.png);
+    background-image: url(../images/promo-bg.png);
     background-repeat: no-repeat;
     background-position: 80% bottom;
 
@@ -279,7 +279,7 @@ body {
 
 .services-advantages {
     padding-top: 250px;
-    background-image: url(/images/ico-nerds.png);
+    background-image: url(../images/ico-nerds.png);
     background-repeat: no-repeat;
     background-position: center top;
 }
@@ -503,15 +503,15 @@ body {
 }
 
 .footer-social a:nth-child(1) {
-    background-image: url(/images/vk-icon.png);
+    background-image: url(../images/vk-icon.png);
 }
 
 .footer-social a:nth-child(2) {
-    background-image: url(/images/fb-icon.png);
+    background-image: url(../images/fb-icon.png);
 }
 
 .footer-social a:nth-child(3) {
-    background-image: url(/images/insta-icon.png);
+    background-image: url(../images/insta-icon.png);
 }
 
 .footer-info {
