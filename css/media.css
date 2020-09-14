@@ -4,21 +4,19 @@
         background-size: 50%;
     }
 
-    .promo-header {
-        justify-content: space-evenly;
+    .promo-header .header-basket {
+        order: -1;
     }
 
     .promo-info {
         width: 50%;
     }
 
-    .nav .button {
+    .nav-burger {
         display: block;
-        position: relative;
     }
 
     .nav ul {
-        /*display: none;*/
         display: block;
         background-color: rgba(251, 86, 90, .85);
         padding: 5%;
@@ -67,7 +65,7 @@
         }
 
         to {
-            left: -20%;
+            left: -40%;
         }
     }
 
@@ -94,13 +92,52 @@
     .adv-wrapper .item-wrapper {
         width: auto;
     }
+   
+    .location {
+        height: auto;
+    }
 
-    .map,
-    .footer .content {
-        padding-bottom: 40px;
+    .location .contacts {
+        width: 100%;
+        box-shadow: none;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .location .map-marker {
+        position: absolute;
+        top: 40%;
+        left: 60%;
+    }
+    
+    .location .contacts p {
+        margin: 10px 0;
+    }
+
+    .location .contacts a {
+        width: 30%;
+        margin: 0 auto;
+    }
+    
+    .location .map {
+        position: static;
+        height: 450px;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .footer .animation-jump {
+        display: none;
     }
 
 @media (max-width: 768px) {
+    .info-description {
+        width: 80%;
+        margin: 40px auto;
+    }
+
     .options-wrapper {
         flex-direction: column;
         text-align: center;
@@ -113,8 +150,13 @@
             width: auto;
     }
 
-    .options-wrapper div:not(:last-child) {
+    .options-wrapper div:not(:last-child),
+    .promo-header {
         margin-bottom: 40px;
+    }
+
+    .promo-header {
+        justify-content: space-around;
     }
 
     .promo {
@@ -135,25 +177,13 @@
         text-align: center;
     }
 
-    .location-info {
+    .location .map-marker {
         display: none;
-    }
-
-    .map .contacts {
-        display: block;
-        margin: 0 auto 50px auto;
-        padding: 20px 0;
-        width: 90%;
-        border-radius: 50px;
-        box-shadow: 0 0 10px #ccc;
-    }
-
-    .map-marker {
-        top: 50%;
     }
 
     .footer .content {
         flex-direction: column;
+        height: 100%;
     }
 
     .footer-social {
@@ -169,18 +199,38 @@
 
 @media (max-width: 426px) {
     .promo-header {
-        flex-direction: column;
         margin-bottom: 40px;
+        height: 100px;
+
+        position: relative;
     }
 
-    .header-logo,
-    .button {
-        margin-bottom: 20px;
+    .header-logo {
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
-    .button {
-        background-color: #fb565a;
-        color: #fff;
+    .promo-header .nav {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .promo-header .header-basket {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    @keyframes slideRight {
+        from {
+            left: -40%;
+        }
+
+        to {
+            left: 0;
+        }
     }
 
     .services li:nth-child(3)::before {
@@ -211,9 +261,8 @@
         margin-bottom: 30px;
     }
 
-    .map-marker img {
-        width: 80%;
-        height: 80%;
+    .location .contacts a {
+        width: 50%;
     }
 }
 
@@ -229,10 +278,6 @@
     .studio-title,
     .friendship {
         font-size: 36px;
-    }
-
-    .map-marker {
-        top: 60%;
     }
 }
 
