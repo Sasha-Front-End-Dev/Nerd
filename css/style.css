@@ -236,7 +236,7 @@ body {
     transition: 1s linear;
     margin-left: 80%;
     background-color: #efc849;
-    transform: rotate(90deg);
+    transform: rotate(360deg);
 }
 
 .services-list li {

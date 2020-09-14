@@ -18,13 +18,18 @@
     }
 
     .nav ul {
-        display: none;
+        /*display: none;*/
+        display: block;
+        background-color: rgba(251, 86, 90, .85);
         padding: 5%;
         position: fixed;
         z-index: 1;
         height: 100%;
         top: 0;
         left: 0;
+        visibility: hidden;
+
+        animation: slideLeft 1s forwards;
     }
 
     .nav li {
@@ -41,8 +46,7 @@
     }
 
     .nav input:checked ~ ul {
-        display: block;
-        background-color: rgba(251, 86, 90, .85);
+        visibility: initial;
         animation: slideRight 1s;
     }
 
@@ -53,6 +57,17 @@
 
         to {
             left: 0;
+        }
+    }
+
+    @keyframes slideLeft {
+        from {
+            visibility: initial;
+            left: 0;
+        }
+
+        to {
+            left: -20%;
         }
     }
 
